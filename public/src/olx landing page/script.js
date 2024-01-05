@@ -16,7 +16,7 @@ onAuthStateChanged(auth, (user) => {
     console.log(userName1024);
     renderAds();
   } else {
-    // location.href = '../../login/login.html';
+    location.href = '../../login.html';
   }
 });
 

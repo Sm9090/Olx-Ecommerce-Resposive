@@ -54,7 +54,7 @@ function onLogIn(user){
   .then((userCredential) => {
    const user = userCredential.user;
    alert('login Successfully')
-    window.location.replace("../src/olx landing page/olx.html")
+    window.location.replace("./src/olx landing page/olx.html")
   })
   .catch((error) => {
     const errorMessage = error.message;
