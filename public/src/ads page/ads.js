@@ -1,6 +1,6 @@
-import { getSingleAd, getUser } from '../../config firebase/script.js'
+import { getSingleAd, getUser } from '../../config/firebase.js'
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
-import { auth, logOut, } from "../../config firebase/script.js";
+import { auth, logOut, } from "../../config/firebase.js";
 
 
 

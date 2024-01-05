@@ -1,4 +1,4 @@
-import{ postAdToDb , auth} from "../../config firebase/script.js"
+import{ postAdToDb , auth} from "../../config/firebase.js"
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 
 
@@ -10,7 +10,6 @@ onAuthStateChanged(auth, (user) => {
         userName.style.fontSize = '18px'
         userName.style.fontWeight = '800'
         userName.innerHTML = user.email
-        //   renderAds()
         getMyAds()
 
     } else {

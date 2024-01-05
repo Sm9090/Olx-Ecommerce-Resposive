@@ -28,8 +28,9 @@ function register(user){
   const{phoneNumber, email ,password , fullName} = user
   createUserWithEmailAndPassword(auth, email, password)
   .then(async(userCredential) => {
-    const user = userCredential.user.uid;
+    const user = userCredential.user;
     console.log(user.uid)
+    console.log(user)
     try {
       const docRef = await setDoc(doc(db, "users",user.uid), {
           email,
@@ -37,9 +38,8 @@ function register(user){
           fullName,
         });
         alert('registered successfully')
-        // console.log('document written with Id', docRef.id);
       } catch (e) {
-        console.error("Error adding document: ", e);
+        console.log("Error adding document: " + e);
       }
     })
   .catch((error) => {
@@ -51,17 +51,15 @@ function register(user){
 
 function onLogIn(user){
     const{email ,password} = user
-
     signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
    const user = userCredential.user;
-    
    alert('login Successfully')
     window.location.replace("../src/olx landing page/olx.html")
   })
   .catch((error) => {
-    const errorCode = error.code;
     const errorMessage = error.message;
+    console.log(errorMessage.split(':')[1])
   });
 }
 

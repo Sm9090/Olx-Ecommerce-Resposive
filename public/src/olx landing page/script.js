@@ -1,5 +1,5 @@
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
-import { auth, logOut, getAds, searchInAds } from "../../config firebase/script.js";
+import { auth, logOut, getAds, searchInAds } from "../../config/firebase.js";
 
 // Global variable to hold ad data
 // let ads = [];

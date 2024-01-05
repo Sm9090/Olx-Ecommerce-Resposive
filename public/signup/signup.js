@@ -1,4 +1,4 @@
-import { register } from "../config firebase/script.js"
+import { register } from "../config/firebase.js"
 
 
 window.onSignUp = function(){
@@ -14,7 +14,6 @@ const user = {
     email: email.value,
     phoneNumber: phoneNumber.value,
     password: password.value
-    
 }
 
 
@@ -23,6 +22,7 @@ for(var i=0 ; i<allInput.length; i++){
 }
 
 // window.location.href = '../login/login.html'
+
 
 
 register(user)
