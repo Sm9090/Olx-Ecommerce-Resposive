@@ -1,0 +1,73 @@
+-------------------firebase---------------
+
+firebase: library
+
+-Database (Primary feature) (Realtime datasbse Means bagair refresh kare apko data mil jaye)
+-Readymade APIs
+-file Storage ( free 5GB)
+-Hosting ( live your website /webapp)
+-Authentication (signIn / signUp)
+
+
+Q1 why we store images and video in file storage ?
+
+hum pics videos wagera storage ma islye dalte ha ke  hen phr waha se url utha kar database ma upload krte hai take wo download nhi ho data 
+
+Q2 hum pics or videos q nhi direct database ma upload nhi krte 
+
+direct islye databvae ma nhi dalte ke e.g 50 mb ki pic/ vid ho to get krne ma bht load hoga
+databser ma heavy data ki wajah se time zyada lag skta ha jis se UI kharab hoskta ha
+
+/*
+Firestore 
+1.collection (array)
+2. Document (object)
+*/
+
+-----------------destructure------------------
+
+
+//destructure Esc6 method
+
+//const {email , password} = users // ye object ke andar se sb get kr ke varialble bana deta ha or uske andar rkh deta ha
+
+-----------Asynchoronous vs Aschoronous---------------------
+
+/*
+1.Asynchoronous (chaltay hain per foran kam nai karte balkay thora sa wait kar ka )
+   i) request  ii) response
+
+   return type: promise     
+e.g . fetch(), setTimeout(),setInterval(), firebase methods etc.
+
+2. synchoronous (Chaltay hi apna kaam kardalen)
+e.g. console.log(), alert(), etc
+
+Aschoronous (jitna bhi tez ho lekin wo synchoronous ko print kr ke he chalega)
+
+jis function ma async chal raha ho agr bahir call karate tw await lagana parta ha wrna
+function ka return promises ma ayega
+
+example: 
+console.log('1')
+setTimeout(function(){
+    console.log('2')
+}, 0)
+
+console.log('3')
+
+answer:
+  1
+  3
+  undefined 
+  2
+
+
+  async/await: alternative .then or .catch
+
+
+*/
+
+spread operator sari object key value lake rkh deta ha 
+
+const ad = {id: doc.id, ...doc.data()}

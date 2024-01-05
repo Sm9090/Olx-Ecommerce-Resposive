@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olx-login-Signup page</title>
+    <link rel="stylesheet" href="../login/style.css">
+</head>
+<body>
+    <div class="Parent">
+        <div class="container">
+        <fieldset class="fieldset" >
+                <label for="text">fullName:</label>
+                <div id="hide" class="display-none">
+                <p>Please Enter your name minimum 2 characters</p>
+                </div>
+                <input type="text" name="text" id="fullName" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="number">Phone:</label>
+                <input type="number" name="number" id="number" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                <label for="confirm">confirm Password:</label>
+                <input type="password" name="confirm" id="cpass" style="margin-bottom: 10px;" required>
+                <p  style="display: block; margin: auto;">already have an account?<a href="../login/logIn.html"> click here!</a></p>
+                <button class="center m-auto" style="margin: 10px 0px;" onclick="onSignUp()" >sign up</button>
+    </fieldset>
+    </div>
+</div>
+<script src="./signup.js" type="module" ></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.Cards > .input{
+
+    display: block;
+    width: 100vw;
+    padding: 10px;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.post{
+    font-size: 24px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: #d3e3fd;
+    font-weight: bold;
+    outline: none;
+    
+}
+
+.post:hover{
+    color: blue;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    border-color: blue;
+}
+
+.Cards{
+   background-color: #3a77ff ;
+}
