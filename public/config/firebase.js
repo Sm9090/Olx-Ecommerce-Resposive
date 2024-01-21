@@ -43,7 +43,7 @@ function register(user){
     })
   .catch((error) => {
     const errorMessage = error.message;
-    console.log(errorMessage)
+    alert(errorMessage)
     
   });
 }
@@ -58,7 +58,7 @@ function onLogIn(user){
   })
   .catch((error) => {
     const errorMessage = error.message;
-    console.log(errorMessage.split(':')[1])
+    alert(errorMessage.split(':')[1])
   });
 }
 
