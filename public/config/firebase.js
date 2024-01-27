@@ -126,7 +126,7 @@ async function postAdToDb(ad) {
       await addDoc(collection(db, "ads"), ad)
       alert('Data added successfully!')
     } catch (e) {
-      alert(e.message)
+      alert(e.message.split(':')[1])
   } 
 }
 

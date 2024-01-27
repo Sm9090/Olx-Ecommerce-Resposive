@@ -15,12 +15,14 @@ onAuthStateChanged(auth, (user) => {
     userName1024.style.fontWeight = '800';
     console.log(userName1024);
     renderAds();
+
   } else {
     location.href = '../../login.html';
   }
 });
 
 getData();
+
 
 function getData() {
   fetch('https://dummyjson.com/products')

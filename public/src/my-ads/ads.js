@@ -1,4 +1,4 @@
-import { auth, getMyAdsFromDb, } from "../../config/firebase.js"
+import { auth, getMyAdsFromDb, logOut } from "../../config/firebase.js"
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 
 
@@ -15,7 +15,7 @@ onAuthStateChanged(auth, (user) => {
       getMyAds()
   
     } else {
-      location.href = '../../login/login.html'
+      location.href = '../../login.html'
   
     }
   });
